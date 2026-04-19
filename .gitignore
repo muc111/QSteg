@@ -1,0 +1,33 @@
+cat > .gitignore << 'EOF'
+# QSteg runtime
+.qsteg_keys/
+*.qss
+qsteg_*.png
+qsteg_*.mp4
+qsteg_*.pdf
+qsteg_test_v17/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.so
+
+# Compiled C extension
+qsteg_mlkem.so
+
+# Backups
+*.backup
+*.backup_*
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test carriers (optional – keep one if you want)
+carrier.png
+EOF
